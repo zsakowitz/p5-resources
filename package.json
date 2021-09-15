@@ -1,0 +1,60 @@
+{
+  "name": "p5-resources",
+  "displayName": "p5 Resources",
+  "description": "A snippet pack for p5zs scripts.",
+  "version": "1.0.0",
+  "publisher": "zsakowitz",
+  "icon": "./favicon.png",
+  "repository": {
+    "url": "https://github.com/zsakowitz/p5-resources"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:ccresources.open-glitch",
+    "onCommand:ccresources.remove-glitch",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
+  ],
+  "main": "index.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "p5.open-glitch",
+        "title": "P5: Open the `p5zs` starter Glitch project."
+      },
+      {
+        "command": "p5.remove-glitch",
+        "title": "P5: Remix the `p5zs` starter Glitch project."
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^8.10.25",
+    "@types/vscode": "^1.51.0"
+  }
+}
