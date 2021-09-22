@@ -27,11 +27,11 @@
     "commands": [
       {
         "command": "p5.open-glitch",
-        "title": "P5: Open the `p5zs` starter Glitch project."
+        "title": "P5: Open the p5zs starter Glitch project."
       },
       {
-        "command": "p5.remove-glitch",
-        "title": "P5: Remix the `p5zs` starter Glitch project."
+        "command": "p5.remix-glitch",
+        "title": "P5: Remix the p5zs starter Glitch project."
       }
     ],
     "snippets": [
