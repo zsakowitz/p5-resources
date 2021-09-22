@@ -1,12 +1,12 @@
 {
-  "name": "p5zs-resources",
+  "name": "p5-resources",
   "displayName": "p5zs Resources",
   "description": "Resources that can be used with p5zs projects.",
   "version": "2.1.0",
   "publisher": "zsakowitz",
   "icon": "favicon.png",
   "repository": {
-    "url": "https://github.com/zsakowitz/p5zs-resources"
+    "url": "https://github.com/zsakowitz/p5-resources"
   },
   "engines": {
     "vscode": "^1.60.0"
