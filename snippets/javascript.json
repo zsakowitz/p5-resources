@@ -1,0 +1,116 @@
+{
+  "Add a setup() function into a p5zs project.": {
+    "prefix": "setup",
+    "body": [
+      "/** This function sets up our sketch. */",
+      "export function setup() {",
+      "\tcreateCanvas(${1:500}, ${2:500});",
+      "\tframeRate(${3:60});",
+      "}",
+      "",
+      "$0"
+    ]
+  },
+  "Add a draw() function into a p5zs project.": {
+    "prefix": "draw",
+    "body": [
+      "/** This function redraws the sketch multiple times a second. */",
+      "export function draw() {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a preload() function into a p5zs project.": {
+    "prefix": "preload",
+    "body": [
+      "/** This function loads resources that will be used later. */",
+      "export function preload() {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a mouseClicked() function into a p5zs project.": {
+    "prefix": "mouseclicked",
+    "body": [
+      "/**",
+      " * This function is called when the mouse is clicked.",
+      " * @param {MouseEvent} event - The `MouseEvent` that is passed as an argument.",
+      " */",
+      "export function mouseClicked(event) {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a doubleClicked() function into a p5zs project.": {
+    "prefix": "doubleclicked",
+    "body": [
+      "/**",
+      " * This function is called when the mouse is double-clicked.",
+      " * @param {MouseEvent} event - The `MouseEvent` that is passed as an argument.",
+      " */",
+      "export function doubleClicked(event) {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a mouseMoved() function into a p5zs project.": {
+    "prefix": "mousemoved",
+    "body": [
+      "/**",
+      " * This function is called when the mouse is moved.",
+      " * @param {MouseEvent} event - The `MouseEvent` that is passed as an argument.",
+      " */",
+      "export function mouseMoved(event) {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a mouseDragged() function into a p5zs project.": {
+    "prefix": "mousedragged",
+    "body": [
+      "/**",
+      " * This function is called when the mouse is dragged.",
+      " * @param {MouseEvent} event - The `MouseEvent` that is passed as an argument.",
+      " */",
+      "export function mouseDragged(event) {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a mousePressed() function into a p5zs project.": {
+    "prefix": "mousepressed",
+    "body": [
+      "/**",
+      " * This function is called when the mouse is pressed.",
+      " * @param {MouseEvent} event - The `MouseEvent` that is passed as an argument.",
+      " */",
+      "export function mousePressed(event) {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a mouseReleased() function into a p5zs project.": {
+    "prefix": "mousereleased",
+    "body": [
+      "/**",
+      " * This function is called when the mouse is released.",
+      " * @param {MouseEvent} event - The `MouseEvent` that is passed as an argument.",
+      " */",
+      "export function mouseReleased(event) {",
+      "\t$0",
+      "}",
+      ""
+    ]
+  },
+  "Add a comment to your code.": {
+    "prefix": "comment",
+    "body": ["// ${1:comment goes here...}", "$0"]
+  }
+}
