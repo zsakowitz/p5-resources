@@ -1,12 +1,12 @@
 {
-  "name": "p5-resources",
-  "displayName": "p5 Resources",
-  "description": "A snippet pack for p5zs scripts.",
-  "version": "2.0.0",
+  "name": "p5zs-resources",
+  "displayName": "p5zs Resources",
+  "description": "Resources that can be used with p5zs projects.",
+  "version": "2.1.0",
   "publisher": "zsakowitz",
   "icon": "favicon.png",
   "repository": {
-    "url": "https://github.com/zsakowitz/p5-resources"
+    "url": "https://github.com/zsakowitz/p5zs-resources"
   },
   "engines": {
     "vscode": "^1.60.0"
@@ -15,8 +15,9 @@
     "Snippets"
   ],
   "activationEvents": [
-    "onCommand:ccresources.open-glitch",
-    "onCommand:ccresources.remove-glitch",
+    "onCommand:p5zs.open-glitch",
+    "onCommand:p5zs.remove-glitch",
+    "onCommand:p5zs.show-project",
     "onLanguage:javascript",
     "onLanguage:typescript",
     "onLanguage:javascriptreact",
@@ -26,12 +27,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "p5.open-glitch",
-        "title": "P5: Open the p5zs starter Glitch project."
+        "command": "p5zs.open-glitch",
+        "title": "P5ZS: Open the p5zs starter Glitch project."
       },
       {
-        "command": "p5.remix-glitch",
-        "title": "P5: Remix the p5zs starter Glitch project."
+        "command": "p5zs.remix-glitch",
+        "title": "P5ZS: Remix the p5zs starter Glitch project."
+      },
+      {
+        "command": "p5zs.show-project",
+        "title": "P5ZS: Show the current project in a side window."
       }
     ],
     "snippets": [
