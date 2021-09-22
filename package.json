@@ -2,7 +2,7 @@
   "name": "p5-resources",
   "displayName": "p5 Resources",
   "description": "A snippet pack for p5zs scripts.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "publisher": "zsakowitz",
   "icon": "./favicon.png",
   "repository": {
