@@ -2,17 +2,32 @@ let vscode = require("vscode");
 
 /** @param {vscode.ExtensionContext} context */
 exports.activate = (context) => {
-  let openGlitchProject = vscode.commands.registerCommand(
+  let openJavaScriptProject = vscode.commands.registerCommand(
     "p5zs.open-glitch",
     () => vscode.env.openExternal("https://glitch.com/edit/#!/p5zs")
   );
 
-  let remixGlitchProject = vscode.commands.registerCommand(
+  let remixJavaScriptProject = vscode.commands.registerCommand(
     "p5zs.remix-glitch",
-    () => vscode.env.openExternal("https://glitch.com/remix/#!/p5zs")
+    () => vscode.env.openExternal("https://glitch.com/edit/#!/remix/p5zs")
   );
 
-  context.subscriptions.push(openGlitchProject, remixGlitchProject);
+  let openTypeScriptProject = vscode.commands.registerCommand(
+    "p5ts.open-glitch",
+    () => vscode.env.openExternal("https://glitch.com/edit/#!/p5ts")
+  );
+
+  let remixTypeScriptProject = vscode.commands.registerCommand(
+    "p5ts.remix-glitch",
+    () => vscode.env.openExternal("https://glitch.com/edit/#!/remix/p5ts")
+  );
+
+  context.subscriptions.push(
+    openJavaScriptProject,
+    remixJavaScriptProject,
+    openTypeScriptProject,
+    remixTypeScriptProject
+  );
 };
 
 exports.deactivate = () => {};
