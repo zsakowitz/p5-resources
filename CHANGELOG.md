@@ -1,13 +1,19 @@
-## 2.0.0
+## 2.3.0
 
-- Renamed some commands and updated others.
+- Improved favicon resolution
+- Moved changelog to seperate file
+- Added "Live Server" and "Browser Preview" as part of extension pack
+
+## 2.2.0
+
+- Fixed bug where `p5zs.remix-glitch` command would open the Glitch project in edit mode, not remix mode.
+- Added commands for p5ts project on Glitch.
 
 ## 2.1.0
 
 - Fixed bug where extension would not start when either command `p5.open-glitch` or command `p5.remix-glitch` was activated; it was using the old names `ccresources.open-glitch` and `ccresources.remix-glitch`.
 - Renamed `p5.*` commands to `p5zs.*`.
 
-## 2.2.0
+## 2.0.0
 
-- Fixed bug where `p5zs.remix-glitch` command would open the Glitch project in edit mode, not remix mode.
-- Added commands for p5ts project on Glitch.
+- Renamed some commands and updated others.
