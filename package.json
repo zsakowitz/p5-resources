@@ -11,6 +11,12 @@
   "engines": {
     "vscode": "^1.60.0"
   },
+  "author": {
+    "email": "zsakowitz@gmail.com",
+    "name": "Zachary Sakowitz",
+    "url": "https://github.com/zsakowitz"
+  },
+  "bugs": "https://github.com/zsakowitz/p5-resources/issues",
   "categories": [
     "Snippets"
   ],
