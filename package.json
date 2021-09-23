@@ -35,11 +35,11 @@
     "commands": [
       {
         "command": "p5zs.open-glitch",
-        "title": "P5ZS: Open the p5zs starter Glitch project."
+        "title": "P5ZS: Open the p5zs starter Glitch project. (Uses JavaScript)"
       },
       {
         "command": "p5zs.remix-glitch",
-        "title": "P5ZS: Remix the p5zs starter Glitch project."
+        "title": "P5ZS: Remix the p5zs starter Glitch project. (Uses JavaScript)"
       },
       {
         "command": "p5ts.open-glitch",
