@@ -32,7 +32,8 @@
   ],
   "main": "index.js",
   "extensionPack": [
-    "ritwickdey.liveserver"
+    "ritwickdey.liveserver",
+    "auchenberg.vscode-browser-preview"
   ],
   "contributes": {
     "commands": [
