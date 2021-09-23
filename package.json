@@ -2,7 +2,7 @@
   "name": "p5-resources",
   "displayName": "p5 Resources",
   "description": "Resources that can be used with p5zs and p5ts projects.",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "publisher": "zsakowitz",
   "icon": "favicon.png",
   "repository": {
@@ -31,6 +31,9 @@
     "onLanguage:typescriptreact"
   ],
   "main": "index.js",
+  "extensionPack": [
+    "ritwickdey.liveserver"
+  ],
   "contributes": {
     "commands": [
       {
