@@ -23,7 +23,8 @@
   "activationEvents": [
     "onCommand:p5zs.open-glitch",
     "onCommand:p5zs.remove-glitch",
-    "onCommand:p5zs.show-project",
+    "onCommand:p5ts.open-glitch",
+    "onCommand:p5ts.remove-glitch",
     "onLanguage:javascript",
     "onLanguage:typescript",
     "onLanguage:javascriptreact",
