@@ -42,8 +42,12 @@
         "title": "P5ZS: Remix the p5zs starter Glitch project."
       },
       {
-        "command": "p5zs.show-project",
-        "title": "P5ZS: Show the current project in a side window."
+        "command": "p5ts.open-glitch",
+        "title": "P5TS: Open the p5ts starter Glitch project. (Uses TypeScript)"
+      },
+      {
+        "command": "p5ts.remix-glitch",
+        "title": "P5TS: Remix the p5ts starter Glitch project. (Uses TypeScript)"
       }
     ],
     "snippets": [
