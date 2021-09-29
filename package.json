@@ -22,9 +22,9 @@
   ],
   "activationEvents": [
     "onCommand:p5zs.open-glitch",
-    "onCommand:p5zs.remove-glitch",
+    "onCommand:p5zs.remix-glitch",
     "onCommand:p5ts.open-glitch",
-    "onCommand:p5ts.remove-glitch",
+    "onCommand:p5ts.remix-glitch",
     "onLanguage:javascript",
     "onLanguage:typescript",
     "onLanguage:javascriptreact",
@@ -39,11 +39,15 @@
     "commands": [
       {
         "command": "p5zs.open-glitch",
-        "title": "P5ZS: Open the p5zs starter Glitch project. (Uses JavaScript)"
+        "title": "P5JS: Open the p5zs starter Glitch project. (Uses JavaScript)"
       },
       {
         "command": "p5zs.remix-glitch",
-        "title": "P5ZS: Remix the p5zs starter Glitch project. (Uses JavaScript)"
+        "title": "P5JS: Remix the p5zs starter Glitch project. (Uses JavaScript)"
+      },
+      {
+        "command": "p5zs.local-glitch",
+        "title": "P5JS: Remix the p5zs starter Glitch project locally. (Uses JavaScript)"
       },
       {
         "command": "p5ts.open-glitch",
@@ -52,6 +56,10 @@
       {
         "command": "p5ts.remix-glitch",
         "title": "P5TS: Remix the p5ts starter Glitch project. (Uses TypeScript)"
+      },
+      {
+        "command": "p5ts.local-glitch",
+        "title": "P5TS: Remix the p5ts starter Glitch project locally. (Uses TypeScript)"
       }
     ],
     "snippets": [
