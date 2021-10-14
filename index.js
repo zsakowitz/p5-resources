@@ -1,33 +1,54 @@
 let vscode = require("vscode");
+let showQuickPick = vscode.window.showQuickPick;
+
+/**
+ * @param {string} title
+ * @returns {Promise<string | null>}
+ */
+async function promptForProject(title) {
+  let options = [
+    "JavaScript (include index.js)",
+    "TypeScript (include index.ts)",
+    "JavaScript (empty index.js)",
+    "TypeScript (empty index.ts)",
+  ];
+
+  let project = options.indexOf(
+    await showQuickPick(options, {
+      title,
+    })
+  );
+
+  if (project != -1)
+    return ["p5es", "p5ts", "p5es-empty", "p5ts-empty"][project];
+  else return null;
+}
 
 /** @param {vscode.ExtensionContext} context */
 exports.activate = (context) => {
-  let openJavaScriptProject = vscode.commands.registerCommand(
-    "p5zs.open-glitch",
-    () => vscode.env.openExternal("https://glitch.com/edit/#!/p5zs")
+  let openProject = vscode.commands.registerCommand(
+    "p5js.open-glitch",
+    async () => {
+      let id = await promptForProject(
+        "What type of project do you want to open?"
+      );
+
+      if (id) vscode.env.openExternal(`https://glitch.com/edit/#!/${id}`);
+    }
   );
 
-  let remixJavaScriptProject = vscode.commands.registerCommand(
-    "p5zs.remix-glitch",
-    () => vscode.env.openExternal("https://glitch.com/edit/#!/remix/p5zs")
+  let remixProject = vscode.commands.registerCommand(
+    "p5js.remix-glitch",
+    async () => {
+      let id = await promptForProject(
+        "What type of project do you want to remix?"
+      );
+
+      if (id) vscode.env.openExternal(`https://glitch.com/edit/#!/remix/${id}`);
+    }
   );
 
-  let openTypeScriptProject = vscode.commands.registerCommand(
-    "p5ts.open-glitch",
-    () => vscode.env.openExternal("https://glitch.com/edit/#!/p5ts")
-  );
-
-  let remixTypeScriptProject = vscode.commands.registerCommand(
-    "p5ts.remix-glitch",
-    () => vscode.env.openExternal("https://glitch.com/edit/#!/remix/p5ts")
-  );
-
-  context.subscriptions.push(
-    openJavaScriptProject,
-    remixJavaScriptProject,
-    openTypeScriptProject,
-    remixTypeScriptProject
-  );
+  context.subscriptions.push(openProject, remixProject);
 };
 
 exports.deactivate = () => {};

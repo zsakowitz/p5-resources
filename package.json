@@ -2,7 +2,7 @@
   "name": "p5-resources",
   "displayName": "p5 Resources",
   "description": "Resources that can be used with p5zs and p5ts projects.",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "publisher": "zsakowitz",
   "icon": "favicon.png",
   "repository": {
@@ -21,10 +21,8 @@
     "Snippets"
   ],
   "activationEvents": [
-    "onCommand:p5zs.open-glitch",
-    "onCommand:p5zs.remix-glitch",
-    "onCommand:p5ts.open-glitch",
-    "onCommand:p5ts.remix-glitch",
+    "onCommand:p5js.open-glitch",
+    "onCommand:p5js.remix-glitch",
     "onLanguage:javascript",
     "onLanguage:typescript",
     "onLanguage:javascriptreact",
@@ -32,26 +30,17 @@
   ],
   "main": "index.js",
   "extensionPack": [
-    "ritwickdey.liveserver",
-    "auchenberg.vscode-browser-preview"
+    "ms-vscode.live-server"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "p5zs.open-glitch",
-        "title": "P5JS: Open the p5zs starter Glitch project. (Uses JavaScript)"
+        "command": "p5js.open-glitch",
+        "title": "P5JS: Open a starter p5.js Glitch project."
       },
       {
-        "command": "p5zs.remix-glitch",
-        "title": "P5JS: Remix the p5zs starter Glitch project. (Uses JavaScript)"
-      },
-      {
-        "command": "p5ts.open-glitch",
-        "title": "P5TS: Open the p5ts starter Glitch project. (Uses TypeScript)"
-      },
-      {
-        "command": "p5ts.remix-glitch",
-        "title": "P5TS: Remix the p5ts starter Glitch project. (Uses TypeScript)"
+        "command": "p5js.remix-glitch",
+        "title": "P5JS: Remix a starter p5.js Glitch project."
       }
     ],
     "snippets": [

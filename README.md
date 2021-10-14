@@ -18,13 +18,13 @@ This extension adds some snippets and commands meant for use with p5zs projects 
 
 # Commands
 
-This extension adds a command to open the core Glitch project. It is named "P5: Open the p5zs starter Glitch project."
+This extension adds a command (p5js.open-glitch) that opens either `p5es`, `p5ts`, `p5es-empty`, or `p5ts-empty` on Glitch, depending on a user choice.
 
-It also adds a command to remix the project, which is named "P5: Remix the p5zs starter Glitch project." Note that sometimes Glitch just opens it without remixing.
+It also adds a command (p5js.remix-glitch) that remixes one of the above projects, again based on user choice.
 
 # Snippets
 
-This extension also adds some snippets that can be used with p5zs. It adds a version for JavaScript and a version for TypeScript.
+This extension also adds some snippets that can be used with p5.js projects created from `p5es`, `p5ts`, `p5es-empty`, or `p5ts-empty` on Glitch.
 
 ## setup (Universal)
 

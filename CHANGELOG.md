@@ -1,3 +1,11 @@
+## 2.4.0
+
+- Made `p5js.open-glitch` and `p5js.remix-glitch` display prompt for project type
+- Added `p5js.open-glitch` and `p5js.remix-glitch` commands
+- Removed `p5zs.open-glitch`, `p5zs.remix-glitch`, `p5ts.open-glitch`, and `p5ts.remix-glitch` commands
+- Added `Live Preview` to extension pack
+- Removed `Live Server` and `Browser Preview` from extension pack
+
 ## 2.3.0
 
 - Improved favicon resolution
