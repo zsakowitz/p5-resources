@@ -14,7 +14,8 @@
 
 # p5 Resources
 
-This extension adds some snippets and commands meant for use with p5zs projects made with the core [p5zs project on Glitch](https://glitch.com/edit/#!/p5zs). It also adds snippets and commands meant for use the p5ts projects made with the core [p5ts project on Glitch](https://glitch.com/edit/#!/p5ts).
+This extension adds some snippets and commands meant for use with p5es projects made with the [p5es project on Glitch](https://glitch.com/edit/#!/p5es) or the [p5es-empty project on Glitch](https://glitch.com/edit/#!/p5es-empty).
+It also adds snippets and commands meant for use the p5ts projects made with the [p5ts project on Glitch](https://glitch.com/edit/#!/p5ts) or [its empty variant, p5ts-empty](https://glitch.com/edit/#!/p5ts-empty).
 
 # Commands
 

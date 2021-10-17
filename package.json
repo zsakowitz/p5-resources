@@ -1,8 +1,8 @@
 {
   "name": "p5-resources",
   "displayName": "p5 Resources",
-  "description": "Resources that can be used with p5zs and p5ts projects.",
-  "version": "2.4.0",
+  "description": "Resources that can be used with p5.js projects created with p5es or p5ts.",
+  "version": "2.5.0",
   "publisher": "zsakowitz",
   "icon": "favicon.png",
   "repository": {

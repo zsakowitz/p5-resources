@@ -1,3 +1,9 @@
+## 2.5.0
+
+- Updated description
+- Fixed broken links in README
+- Update README
+
 ## 2.4.0
 
 - Made `p5js.open-glitch` and `p5js.remix-glitch` display prompt for project type
