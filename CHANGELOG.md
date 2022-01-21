@@ -1,6 +1,7 @@
 ## 2.6.0
 
-- Add `p5js.open-docs` to open the p5 documentation.
+- Add `p5.documentationPlacement` to set the location of opened docs.
+- Add `p5js.open-docs` to open the p5 documentation within VSCode.
 
 ## 2.5.0
 

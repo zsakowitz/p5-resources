@@ -34,6 +34,20 @@
     "ms-vscode.live-server"
   ],
   "contributes": {
+    "configuration": {
+      "title": "p5.js",
+      "properties": {
+        "p5.documentationPlacement": {
+          "enum": [
+            "nextToEditor",
+            "newTab",
+            "browser"
+          ],
+          "default": "nextToEditor",
+          "description": "Controls the location p5js documentation is opened to."
+        }
+      }
+    },
     "commands": [
       {
         "command": "p5js.open-glitch",

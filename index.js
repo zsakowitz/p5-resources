@@ -53,10 +53,18 @@ exports.activate = (context) => {
   );
 
   let openDocs = vscode.commands.registerCommand("p5js.open-docs", () => {
+    /** @type {"nextToEditor" | "newTab" | "browser"} */
+    let pref = vscode.workspace
+      .getConfiguration("p5")
+      .get("documentationPlacement");
+
+    if (pref == "browser")
+      return openExternal(createURI("https://p5js.org/reference/"));
+
     let panel = vscode.window.createWebviewPanel(
       "p5js",
       "p5js Documentation",
-      { viewColumn: -2, preserveFocus: true },
+      { viewColumn: pref == "newTab" ? -1 : -2, preserveFocus: true },
       { enableScripts: true }
     );
 
