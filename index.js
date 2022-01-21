@@ -1,5 +1,9 @@
+// @ts-check
+
 let vscode = require("vscode");
 let showQuickPick = vscode.window.showQuickPick;
+let openExternal = vscode.env.openExternal;
+let createURI = (/** @type {string} */ val) => vscode.Uri.parse(val, true);
 
 /**
  * @param {string} title
@@ -33,7 +37,7 @@ exports.activate = (context) => {
         "What type of project do you want to open?"
       );
 
-      if (id) vscode.env.openExternal(`https://glitch.com/edit/#!/${id}`);
+      if (id) openExternal(createURI(`https://glitch.com/edit/#!/${id}`));
     }
   );
 
@@ -44,12 +48,36 @@ exports.activate = (context) => {
         "What type of project do you want to remix?"
       );
 
-      if (id) vscode.env.openExternal(`https://glitch.com/edit/#!/remix/${id}`);
+      if (id) openExternal(createURI(`https://glitch.com/edit/#!/remix/${id}`));
     }
   );
 
   let openDocs = vscode.commands.registerCommand("p5js.open-docs", () => {
-    vscode.env.openExternal("https://p5js.org/reference");
+    let panel = vscode.window.createWebviewPanel(
+      "p5js",
+      "p5js Documentation",
+      { viewColumn: -2, preserveFocus: true },
+      { enableScripts: true }
+    );
+
+    panel.webview.html = `
+      <style>
+        html, body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      </style>
+      
+      <iframe src="https://p5js.org/reference/"></iframe>
+    `;
   });
 
   context.subscriptions.push(openProject, remixProject, openDocs);
