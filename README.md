@@ -16,6 +16,7 @@
 
 This extension adds some snippets and commands meant for use with p5es projects made with the [p5es project on Glitch](https://glitch.com/edit/#!/p5es) or the [p5es-empty project on Glitch](https://glitch.com/edit/#!/p5es-empty).
 It also adds snippets and commands meant for use the p5ts projects made with the [p5ts project on Glitch](https://glitch.com/edit/#!/p5ts) or [its empty variant, p5ts-empty](https://glitch.com/edit/#!/p5ts-empty).
+For your convenience, a command to open the p5js documentation in your browser is also added.
 
 # Commands
 

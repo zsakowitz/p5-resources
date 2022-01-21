@@ -48,7 +48,11 @@ exports.activate = (context) => {
     }
   );
 
-  context.subscriptions.push(openProject, remixProject);
+  let openDocs = vscode.commands.registerCommand("p5js.open-docs", () => {
+    vscode.env.openExternal("https://p5js.org/reference");
+  });
+
+  context.subscriptions.push(openProject, remixProject, openDocs);
 };
 
 exports.deactivate = () => {};
