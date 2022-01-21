@@ -20,9 +20,10 @@ For your convenience, a command to open the p5js documentation in your browser i
 
 # Commands
 
-This extension adds a command (p5js.open-glitch) that opens either `p5es`, `p5ts`, `p5es-empty`, or `p5ts-empty` on Glitch, depending on a user choice.
+This extension adds two commands relating to templates. "P5JS: Open a starter project" opens either `p5es`, `p5ts`, `p5es-empty`, or `p5ts-empty` on Glitch, depending on a user choice.
+"P5JS: Remix a starter project" does the same, but remixes the project automatically if the user is logged in.
 
-It also adds a command (p5js.remix-glitch) that remixes one of the above projects, again based on user choice.
+It also adds the "P5JS: Open Documentation" command which opens the p5js documentation. Depending on the "P5: Documentation Location" setting, it will open in VSCode or the browser.
 
 # Snippets
 
